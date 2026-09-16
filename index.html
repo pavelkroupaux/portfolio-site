@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>Private</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2317161a'/><rect x='11' y='15' width='10' height='8' rx='2' fill='%23fdfcfa'/><path d='M13 15v-2.5a3 3 0 0 1 6 0V15' stroke='%23fdfcfa' stroke-width='2' fill='none'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Lock screen. Everything below is ciphertext until the password derives the key. -->
+<main id="gate" class="gate">
+  <div class="gate__inner">
+    <p class="gate__eyebrow">Private</p>
+    <h1 class="gate__title">This work is<br><em>behind a password.</em></h1>
+    <p class="gate__note">If you were sent here, you have the password. If you do not, write to me and I will send it.</p>
+
+    <form id="gate-form" class="field" autocomplete="off" novalidate>
+      <label class="field__label" for="password">Password</label>
+      <div class="field__row">
+        <input
+          id="password"
+          class="field__input"
+          type="password"
+          name="password"
+          autocomplete="current-password"
+          spellcheck="false"
+          autocapitalize="none"
+          required>
+        <button id="gate-submit" class="field__go" type="submit" aria-label="Unlock">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 12h15M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </div>
+      <p id="gate-message" class="field__message" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</main>
+
+<!-- Filled in only after a successful decrypt. -->
+<div id="app" class="app" hidden></div>
+
+<script>
+  window.VAULT = {
+    salt: "NeFy8Qt7p++FyRvmD57/1g==",
+    iterations: 310000,
+    payload: "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"
+  };
+</script>
+<script src="app.js" type="module"></script>
+
+</body>
+</html>
