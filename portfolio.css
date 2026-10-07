@@ -1,0 +1,319 @@
+/* Private portfolio: additions on top of site.css (the pavelkroupa.com look).
+   Carried over from the portfolio concept. The hero drawing now uses the
+   site.css version (.hero2, .hx-pen, red marker), so its old rules are gone. */
+.pf-badge{margin-left:8px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 8px}
+@media(max-width:760px){.top a.pf-cl{display:none}}
+@media(max-width:380px){.pf-badge{display:none}}
+
+.pf-todo{display:inline;background:rgba(255,206,27,.22);border:1px dashed #C99700;border-radius:6px;padding:2px 7px;font-family:var(--display);font-size:13px;font-weight:600;line-height:1.7;color:var(--ink);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+.pf-hero .pf-private{display:inline-block;margin:0 0 22px;font-family:var(--display);font-size:13px;font-weight:600;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--raise)}
+
+.pf-brief{padding:clamp(56px,8vw,104px) 0}
+.pf-brief h2{max-width:22ch}
+.pf-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px}
+.pf-fact{background:var(--surface);border-radius:16px;padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px}
+.pf-fact p{margin:0;font-size:15.5px;line-height:1.5;color:var(--muted)}
+.pf-fact .pf-big{font-family:var(--display);font-size:21px;font-weight:700;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+.pf-k{margin:0;font-family:var(--display);font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.pf-fact-dark{background:var(--panel);border:1px solid var(--panel-line)}
+.pf-fact-dark .pf-k{color:var(--fix)}
+.pf-fact-dark .pf-big{color:var(--on-panel)}
+.pf-fact-dark p{color:var(--on-panel-soft)}
+.pf-not{margin:22px 0 0;font-size:16px;color:var(--muted)}
+.pf-not b{color:var(--ink);font-family:var(--display)}
+.pf-logos-band{margin-top:48px;background:var(--panel);border:1px solid var(--panel-line);border-radius:20px;padding:26px 28px 30px}
+.pf-logos-h{margin:0 0 18px;font-family:var(--display);font-size:13px;font-weight:600;color:var(--on-panel-soft);text-align:center}
+.pf-logos{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 44px}
+.pf-logos .lg{height:32px}
+.pf-logos .lg a{display:flex;align-items:center;gap:8px;text-decoration:none}
+
+.pf-steps{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pf-steps li{display:flex;flex-direction:column;gap:6px;background:var(--raise);border:1px solid var(--line);border-radius:16px;padding:20px}
+.pf-steps small{font-family:var(--display);font-size:12px;font-weight:600;color:var(--faint)}
+.pf-steps b{font-family:var(--display);font-size:17px;letter-spacing:-.01em;line-height:1.25}
+.pf-steps span:last-child{font-size:15px;line-height:1.5;color:var(--muted)}
+.pf-n{width:28px;height:28px;border-radius:50%;background:var(--fix);color:#111;display:inline-flex;align-items:center;justify-content:center;font-family:var(--display);font-size:13px;font-weight:800;flex:none}
+
+.pf-cases .pf-sub{margin:-8px auto 28px;color:var(--muted);font-size:17px;text-align:center}
+
+.pf-refs-sec{padding:clamp(56px,8vw,104px) 0}
+.pf-refs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px;align-items:start}
+.pf-refs .ref summary{grid-template-columns:1fr!important;gap:14px!important}
+.pf-refs .ref-full{padding:0 22px 18px}
+.pf-refs .ref{width:auto!important;max-width:none!important;flex:none!important;margin:0!important}
+.pf-refs-one{grid-template-columns:minmax(0,720px);margin:40px 0 0}
+
+.pf-svc-list{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pf-svc-list a{display:flex;flex-direction:column;gap:8px;height:100%;box-sizing:border-box;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--raise);color:var(--ink);text-decoration:none}
+.pf-svc-list a:hover{border-color:var(--ink)}
+.pf-svc-list b{font-family:var(--display);font-size:18px;letter-spacing:-.01em;line-height:1.25}
+.pf-svc-list .pf-price{font-family:var(--display);font-weight:700;font-size:15px}
+.pf-svc-list span:last-child{font-size:15px;line-height:1.5;color:var(--muted)}
+.panel .btn-line.pf-mail{color:var(--on-panel);border-color:var(--panel-line)}
+
+/* ---------- případ ---------- */
+.pf-case{padding:clamp(8px,3vw,40px) 0 clamp(56px,8vw,96px)}
+.pf-lead{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:48px;align-items:start}
+.pf-lead-txt{display:flex;flex-direction:column;gap:22px}
+.pf-tag{margin:0;display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-family:var(--display);font-size:15px;font-weight:650}
+.pf-tag i{width:10px;height:10px;border-radius:50%;background:var(--fix);flex:none}
+.pf-state{margin-left:auto;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:var(--surface);border-radius:999px;padding:5px 10px}
+.pf-intro{margin:0;font-size:19px;line-height:1.55;color:var(--ink)}
+.pf-result{background:#111;color:#fff;border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:8px}
+.pf-result small{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#FFCE1B}
+.pf-result p{margin:0;font-family:var(--display);font-size:20px;font-weight:650;letter-spacing:-.015em;line-height:1.3;color:#fff}
+.pf-result span{font-family:var(--display);font-size:12.5px;color:#BDBDB5}
+:root[data-theme="dark"] .pf-result{box-shadow:0 0 0 1px rgba(255,206,27,.55)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pf-result{box-shadow:0 0 0 1px rgba(255,206,27,.55)}}
+.pf-check{margin:0;display:flex;flex-direction:column;gap:8px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--display);font-size:14px}
+.pf-check div{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px}
+.pf-check dt{font-weight:700}
+.pf-check dd{margin:0;color:var(--muted)}
+.pf-sketch-wrap{display:flex;flex-direction:column;gap:20px}
+.pf-sketch{position:relative;min-height:440px;border-radius:18px;border:1px solid var(--line);background-color:var(--raise);background-image:radial-gradient(var(--grid) 1.4px,transparent 1.4px);background-size:24px 24px;display:flex;align-items:center;justify-content:center;padding:40px;box-sizing:border-box}
+.pf-sketch-in{max-width:420px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.pf-hand{margin:0;font-family:var(--hand);font-size:24px;font-weight:600}
+.pf-mark{position:absolute;width:30px;height:30px;border-radius:50%;background:var(--fix);color:#111;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:13px;font-weight:800}
+.pf-pts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pf-pts li{display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:10px;row-gap:3px;align-items:start}
+.pf-pts .pf-n{grid-row:span 2}
+.pf-pts b{font-family:var(--display);font-size:15px;line-height:1.3}
+.pf-pts span:last-child{font-size:14.5px;line-height:1.5;color:var(--muted)}
+
+.pf-dg{margin:clamp(48px,6vw,72px) 0 0;padding:28px 24px 18px;border:1px solid var(--line);border-radius:18px;background:var(--raise)}
+.dg text{font-family:var(--display)}
+.pf-dg figcaption{margin-top:12px;font-family:var(--display);font-size:13.5px;color:var(--faint)}
+
+.pf-h{margin:clamp(48px,6vw,72px) 0 18px}
+.pf-qs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.pf-q{background:var(--surface);border-radius:14px;padding:20px 20px 22px;display:flex;flex-direction:column;gap:10px}
+.pf-q p{margin:0;font-size:16px;line-height:1.5}
+.pf-q-dark{background:var(--panel);color:var(--on-panel);border:1px solid var(--panel-line)}
+.pf-q-dark .pf-k{color:var(--fix)}
+.pf-tried{margin-top:24px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;align-items:start;padding:22px 24px;border:1.5px dashed var(--line);border-radius:14px}
+.pf-tried p:last-child{margin:0;font-size:17px;line-height:1.55;color:var(--muted)}
+.pf-shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pf-shot{margin:0;display:flex;flex-direction:column;gap:12px}
+.pf-shot-img{height:260px;border:1.5px dashed var(--line);border-radius:14px;background:var(--surface);display:flex;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;text-align:center}
+.pf-shot figcaption{display:flex;flex-direction:column;gap:8px}
+.pf-by{font-family:var(--display);font-size:12.5px;color:var(--faint)}
+.pf-why{font-size:15px;line-height:1.5}
+.pf-why b{font-family:var(--display);font-size:13px;margin-right:4px}
+.pf-ref-todo{margin-top:40px}
+.pf-full{margin-top:clamp(48px,6vw,72px);padding-top:28px;border-top:1px solid var(--line);max-width:820px}
+.pf-full h3{margin:28px 0 10px;font-family:var(--display);font-size:20px}
+.pf-full p{font-size:17px;line-height:1.55;color:var(--muted)}
+.pf-full-steps{margin:0;padding-left:22px;font-size:17px;line-height:1.55;color:var(--muted)}
+.pf-full-steps li{margin-bottom:12px}
+.pf-full-steps b{color:var(--ink);font-family:var(--display);font-size:16px}
+.pf-note{font-family:var(--display);font-size:14px!important;color:var(--faint)!important;margin-top:24px}
+
+@media(max-width:960px){
+  .pf-facts,.pf-steps,.pf-qs,.pf-refs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pf-svc-list{grid-template-columns:1fr}
+  .pf-lead{grid-template-columns:1fr;gap:32px}
+}
+@media(max-width:640px){
+  .pf-facts,.pf-steps,.pf-qs,.pf-refs,.pf-shots,.pf-pts{grid-template-columns:1fr}
+  .pf-tried{grid-template-columns:1fr;gap:10px}
+  .pf-sketch{min-height:300px;padding:28px}
+  .pf-check div{grid-template-columns:80px minmax(0,1fr)}
+  .pf-dg{padding:18px 14px 14px}
+}
+
+/* ---------- zámek ---------- */
+.pf-lock{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;background-color:var(--ground);background-image:radial-gradient(var(--grid) 1.4px,transparent 1.4px);background-size:24px 24px}
+.pf-lock-box{width:100%;max-width:380px;background:var(--raise);border:1px solid var(--line);border-radius:20px;padding:32px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow-1)}
+.pf-lock-logo .pk{height:56px;width:auto;display:block;margin-bottom:8px}
+.pf-lock-box h1{margin:0;font-family:var(--display);font-size:26px;letter-spacing:-.02em}
+.pf-lock-box p{margin:0;color:var(--muted);font-size:15.5px}
+.pf-lock-box label{margin-top:10px;font-family:var(--display);font-size:13px;font-weight:600}
+.pf-lock-box input{font:inherit;font-size:16px;color:var(--ink);background:var(--ground);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none}
+.pf-lock-box input:focus{border-color:var(--ink);box-shadow:0 0 0 3px rgba(255,206,27,.45)}
+.pf-lock-box .btn{justify-content:center;margin-top:4px}
+.pf-err{color:#B42318!important;font-family:var(--display);font-size:14px!important}
+:root[data-theme="dark"] .pf-err{color:#FF8A7A!important}
+.pf-lock-foot{font-size:13.5px!important;margin-top:6px!important}
+.pf-lock .pk-t,.pf-lock .pk-l{fill:var(--ink)}
+
+.pf-case .eyebrow{text-align:left;margin-left:0}
+.pf-lock-box h1{text-align:left!important;max-width:none!important;margin:0!important}
+.pf-lock-box a{color:var(--ink);text-underline-offset:3px}
+
+/* ---------- v2: jazyky, zaměstnavatelé, životopis, kreslení ---------- */
+html[lang="cs"] .l-en,html[lang="en"] .l-cs{display:none!important}
+html:not([lang="cs"]):not([lang="en"]) .l-en{display:none!important}
+.pf-lang{font:inherit;font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 10px;cursor:pointer;margin-right:6px}
+.pf-lang:hover{border-color:var(--ink)}
+@media(max-width:480px){.top a.pf-cvl{font-size:12.5px}}
+.pf-hero .eyebrow{margin-bottom:10px}
+.pf-hero-cta{justify-content:center}
+.pf-avail{margin:16px auto 0;text-align:center;font-family:var(--display);font-size:14px;font-weight:600;color:var(--muted)}
+
+.pf-roles-sec h2,.pf-lead-sec h2{max-width:24ch}
+.pf-roles{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--line)}
+.pf-roles li{display:grid;grid-template-columns:120px minmax(0,1.1fr) minmax(0,1.3fr) minmax(0,1.3fr);gap:20px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.pf-yr{font-family:var(--display);font-size:14px;font-weight:600;color:var(--faint);padding-top:2px}
+.pf-who{display:flex;flex-direction:column;gap:3px}
+.pf-who b{font-family:var(--display);font-size:17px}
+.pf-who span{font-size:14.5px;color:var(--muted);line-height:1.4}
+.pf-roles p{margin:0;font-size:15px;line-height:1.5;color:var(--muted)}
+.pf-roles .pf-own{color:var(--ink)}
+.pf-more{margin:20px 0 0;font-family:var(--display);font-weight:600}
+.pf-lead-sec{padding:clamp(56px,8vw,104px) 0}
+.pf-lead-list{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pf-lead-list li{display:flex;flex-direction:column;gap:6px;background:var(--surface);border-radius:16px;padding:20px}
+.pf-lead-list b{font-family:var(--display);font-size:17px;line-height:1.25;letter-spacing:-.01em}
+.pf-lead-list span:last-child{font-size:15px;line-height:1.5;color:var(--muted)}
+.pf-lead-sec .pf-refs-one{margin-top:24px}
+.panel .btn-line.pf-ghost{color:var(--on-panel);border-color:var(--panel-line)}
+
+.pf-cv-top h1{margin-bottom:6px}
+.pf-cv-role{margin:0 auto;text-align:center;font-family:var(--display);font-size:17px;color:var(--muted);max-width:60ch}
+.pf-cv-contact{margin:10px auto 0;text-align:center;font-family:var(--display);font-size:14px;color:var(--faint)}
+.pf-cv-contact a{color:inherit}
+.pf-cv-dl{justify-content:center;margin-top:22px}
+.pf-cv{padding:clamp(24px,4vw,48px) 0 clamp(56px,8vw,96px)}
+.pf-cv-doc{max-width:820px}
+.pf-cv-doc h2{margin:36px 0 12px;font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);text-align:left;padding-bottom:8px;border-bottom:1px solid var(--line);max-width:none}
+.pf-cv-doc p,.pf-cv-doc li{font-size:16.5px;line-height:1.55;color:var(--ink)}
+.pf-cv-doc p{margin:0 0 10px}
+.pf-cv-doc ul{margin:0;padding-left:20px}
+.pf-cv-doc li{margin-bottom:6px}
+.pf-cv-job{margin:18px 0 0}
+.pf-cv-jh{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.pf-cv-jh b{font-family:var(--display);font-size:18px}
+.pf-cv-jh span{font-family:var(--display);font-size:16px;color:var(--muted)}
+.pf-cv-jh em{margin-left:auto;font-style:normal;font-family:var(--display);font-size:14px;color:var(--faint)}
+.pf-cv-ctx{font-style:italic;color:var(--muted)!important;margin:4px 0 8px!important}
+
+.pf-lock-top{display:flex;align-items:flex-start;justify-content:space-between}
+
+@media(max-width:960px){
+  .pf-lead-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pf-roles li{grid-template-columns:100px minmax(0,1fr);}
+  .pf-roles li p{grid-column:2}
+}
+@media(max-width:640px){
+  .pf-lead-list{grid-template-columns:1fr}
+  .pf-roles li{grid-template-columns:1fr;gap:6px}
+  .pf-roles li p{grid-column:auto}
+  .pf-cv-jh em{margin-left:0;width:100%}
+}
+@media print{
+  .top,.foot,.pf-cv-dl,.crumb,.pf-contact{display:none!important}
+  .pf-cv-top,.pf-cv{padding:0!important;background:none!important}
+}
+.pf-logos-h{max-width:none!important;margin-left:auto!important;margin-right:auto!important}
+
+/* ---------- v3: navigace podle projektů, hero vlevo a skoky vpravo ---------- */
+.pf-hero .wrap{text-align:left}
+.pf-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center}
+.pf-hero-txt{display:flex;flex-direction:column;align-items:flex-start}
+.pf-hero .pf-hero-txt h1,.pf-hero .pf-hero-txt .lede,.pf-hero .pf-hero-txt .eyebrow,.pf-hero .pf-avail{text-align:left!important;margin-left:0!important;margin-right:0!important}
+.pf-hero .pf-hero-txt h1{max-width:13ch}
+.pf-hero .pf-hero-txt .lede{max-width:52ch}
+.pf-hero .pf-avail{margin-top:14px}
+.pf-jumps{display:flex;flex-direction:column;gap:10px}
+.pf-jump{display:flex;flex-direction:column;gap:2px;padding:14px 46px 14px 18px;border:1px solid var(--line);border-radius:14px;background:var(--raise);color:var(--ink);text-decoration:none;position:relative;transition:border-color .15s,transform .15s}
+.pf-jump::after{content:"\2192";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--display);font-size:18px;color:var(--faint);transition:color .15s,right .15s}
+.pf-jump:hover{border-color:var(--ink)}
+.pf-jump:hover::after{color:var(--ink);right:14px}
+.pf-jump:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(255,206,27,.6)}
+.pf-jump-t{font-family:var(--display);font-size:17px;font-weight:700;letter-spacing:-.01em}
+.pf-jump-s{font-family:var(--display);font-size:13px;color:var(--muted)}
+.pf-hero .hx-fig{margin-top:clamp(36px,5vw,56px)}
+.pf-proc-sec .pf-more{margin-top:24px}
+.pf-projnav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 28px}
+.pf-projnav a{font-family:var(--display);font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--raise)}
+.pf-projnav a:hover{color:var(--ink);border-color:var(--ink)}
+.pf-projnav a.on{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.pf-projnav .pf-pn-all{border-color:transparent;background:transparent;padding-left:4px}
+.pf-projnav .pf-pn-all::before{content:"\2190  ";}
+@media(max-width:900px){.pf-hero-grid{grid-template-columns:1fr;gap:28px}.pf-jumps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.top a.pf-nl-2{display:none}}
+@media(max-width:480px){.pf-jumps{grid-template-columns:1fr}.pf-jump{padding:12px 44px 12px 16px}}
+.pf-hero .pf-hero-txt .lede{margin-bottom:0!important}
+@media(max-width:600px){.pf-badge{display:none}}
+@media(max-width:520px){.top-in{gap:10px!important}.pf-lang{padding:4px 8px;margin-right:2px}}
+@media(max-width:380px){.top .mark{font-size:0!important;gap:0!important}.top .mark .pk{display:block!important}}
+
+/* ---------- encrypted portfolio: lock screen extras, decrypted media ---------- */
+.pf-lock-top .ctl{margin:0}
+.pf-lock-foot a{white-space:nowrap}
+.pf-lock-box .btn[disabled]{opacity:.6;cursor:progress}
+.pf-err:empty{display:none}
+.pf-err.pf-info{color:var(--muted)!important}
+.pf-lock-box.pf-wrong input{border-color:var(--marker)}
+.pf-lock-box.pf-wrong .pf-pw{animation:pf-shake .4s cubic-bezier(.36,.07,.19,.97)}
+@keyframes pf-shake{20%{transform:translateX(-6px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(2px)}}
+@media (prefers-reduced-motion:reduce){.pf-lock-box.pf-wrong .pf-pw{animation:none}}
+/* An encrypted image stays invisible until it is decrypted, so its alt text never flashes. */
+img[data-asset]:not([src]){visibility:hidden}
+[data-file][aria-busy="true"]{opacity:.6;cursor:progress}
+
+/* ---------- password eye ---------- */
+.pf-pw{position:relative;display:flex}
+.pf-lock-box .pf-pw input{flex:1;min-width:0;padding-right:50px}
+.pf-pw input::-ms-reveal,.pf-pw input::-ms-clear{display:none}
+.pf-eye{position:absolute;top:50%;right:6px;transform:translateY(-50%);width:36px;height:36px;padding:0;border:0;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer;display:grid;place-items:center;transition:background .25s ease,color .25s ease}
+.pf-eye:hover{background:var(--surface);color:var(--ink)}
+.pf-eye:focus-visible{outline:none;color:var(--ink);box-shadow:0 0 0 3px rgba(255,206,27,.6)}
+.pf-eye svg{width:20px;height:20px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.pf-eye .pf-eye-shut,.pf-eye[aria-pressed="true"] .pf-eye-open{display:none}
+.pf-eye[aria-pressed="true"] .pf-eye-shut{display:block}
+
+/* ---------- Lab link: red on hover, a bubbling flask shows in front ----------
+   The flask sits in the gap before the text, so nothing in the nav moves. Touch screens
+   never get the hover look (a tap would leave it stuck); keyboard focus gets it everywhere. */
+.top a.lnk.pf-lab{position:relative}
+.pf-flask{position:absolute;right:100%;top:50%;width:18px;height:18px;margin:-9px 5px 0 0;overflow:visible;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:translateX(-4px);transition:opacity .25s ease,transform .25s ease;pointer-events:none}
+.pf-flask .pf-liquid{fill:currentColor;fill-opacity:.2;stroke:none}
+.pf-flask .pf-bub{fill:currentColor;stroke:none;transform-box:fill-box;transform-origin:50% 50%;animation:pf-bub var(--d) ease-in var(--dl) infinite backwards paused}
+.pf-flask .b1{--y0:4px;--y1:-14.4px;--dx:.8px;--d:1.6s;--dl:0s}
+.pf-flask .b2{--y0:7.4px;--y1:-11px;--dx:-.8px;--d:1.9s;--dl:.45s}
+.pf-flask .b3{--y0:11px;--y1:-7.4px;--dx:.6px;--d:1.4s;--dl:.9s}
+.pf-flask .b4{--y0:5.6px;--y1:-12.8px;--dx:-.6px;--d:1.8s;--dl:1.3s}
+@keyframes pf-bub{
+  0%{transform:translate(0,var(--y0)) scale(.4);opacity:0}
+  15%{opacity:1}
+  50%{transform:translate(var(--dx),calc((var(--y0) + var(--y1)) / 2)) scale(.9)}
+  80%{opacity:1}
+  100%{transform:translate(0,var(--y1)) scale(1);opacity:0}
+}
+.top a.lnk.pf-lab:focus-visible{color:var(--marker);outline:none;border-radius:6px;box-shadow:0 0 0 3px rgba(255,206,27,.6)}
+.top a.lnk.pf-lab:focus-visible .pf-flask{opacity:1;transform:none}
+.top a.lnk.pf-lab:focus-visible .pf-bub{animation-play-state:running}
+@media (hover:hover){
+  .top a.lnk.pf-lab:hover{color:var(--marker)}
+  .top a.lnk.pf-lab:hover .pf-flask{opacity:1;transform:none}
+  .top a.lnk.pf-lab:hover .pf-bub{animation-play-state:running}
+}
+@media (hover:hover) and (min-width:521px){.top a.lnk.pf-lab{margin-left:10px}}
+@media (max-width:520px){.pf-flask{display:none}} /* no room before the label on a phone-width bar */
+@media (prefers-reduced-motion:reduce){
+  .pf-flask{transform:none;transition:opacity .25s ease}
+  .top a.lnk.pf-lab .pf-bub{animation:none}
+}
+
+/* ---------- theme switch on the lock screen: same sun and moon as the header (site.css, .tg) ---------- */
+[data-theme-toggle]{display:flex;align-items:center;justify-content:center;padding:6px 10px}
+/* spinner (site.css, .pk-spin) before "Odemykám…" while the key is derived */
+.pf-err.pf-info{display:flex;align-items:center;gap:10px}
+.pf-err .pk-spin{height:20px;color:var(--muted)}
+
+/* ---------- case diagrams in the pavelkroupa.com style (tools/pf-diagrams.py) ----------
+   Wide one on a computer, tall one on a phone. Colors and animation come from site.css (.dg, .cdg, .ill). */
+.pf-dg .dg{display:block;width:100%;height:auto}
+.pf-dg .dg-m{display:none;max-width:420px;margin:0 auto}
+@media (max-width:700px){.pf-dg .dg-d{display:none}.pf-dg .dg-m{display:block}}
+.cdg .cdg-sm{font-size:14.5px}
+.cdg .cdg-hl{fill:var(--fix);stroke:var(--ink);stroke-width:1.5}
+.cdg .cdg-dark{fill:var(--ink)}
+.cdg .cdg-on-dark{fill:var(--ground)}
+.cdg .cdg-on-dark2{fill:var(--ground);opacity:.72}
+.cdg .cdg-bad-t{fill:var(--marker)}
+.cdg .cdg-b{font-weight:700}
+.cdg .cdg-aa{font-size:18px}
+.cdg .cdg-axis{stroke:var(--faint)}
